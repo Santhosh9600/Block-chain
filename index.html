@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #0b0f26;
+    color: #fff;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+  }
+
+  header .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #bab9b9;
+    font-size: 20px;
+    margin-left: 80px;
+  }
+
+  .active {
+    color: #f2f8f9;
+  }
+
+  .btn-nav {
+    background: #FFc857;
+    width: 174px;
+    height: 49px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+
+  }
+
+  .btn-primary {
+    background: #ff7a75;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  /* Hero */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 20px;
+  }
+
+  .hero-text h1 {
+    margin-left: 30px;
+    font-size: 70px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .hero-text p {
+    margin-left: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ccc;
+  }
+
+  .btn-hero {
+    margin-left: 30px;
+    background: #ff7a75;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    margin-right: 800px;
+    width: 160px;
+    height: 49px;
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    filter: drop-shadow(0 0 30px #7d4dff);
+  }
+
+  .load-img {
+    margin-top: -120px;
+    margin-left: 800px;
+  }
+
+  /* lottery */
+
+  .card-section h2 {
+    margin-left: 45px;
+    font-size: 45px;
+  }
+
+  .card-section p {
+    margin-left: 45px;
+    font-size: 17px;
+    line-height: 163%;
+    color: #ccc;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+  }
+
+  .card {
+    border: solid 2px #fff;
+    background: #151b3c;
+    padding: 25px;
+    height: 450px;
+    width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px #1a1f45;
+    margin-left: -100;
+  }
+
+  .card img {
+    margin-top: 55px;
+  }
+
+  .lottery-btn {
+    display: flex;
+    gap: 5px;
+    margin-top: 40px;
+  }
+
+  .card-btn {
+    margin-left: 30px;
+    background: #ff7a75;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    height: 40px;
+    font-size: 16px;
+    width: 400px;
+  }
+
+  .price-btn {
+    margin-left: -5px;
+    background: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    height: 40px;
+    font-size: 16px;
+    width: 400px;
+  }
+
+  /*loading img*/
+
+  .cardload-img {
+    margin-top: 70px;
+    margin-left: 800px;
+  }
+
+  /* staking */
+
+  .stacking {
+    margin-top: 150px;
+    margin-left: 800px;
+  }
+
+  .stacking img {
+    margin-top: -100px;
+    margin-left: -730px;
+    filter: drop-shadow(0 0 30px #7d4dff);
+
+  }
+
+  .stacking h2 {
+    margin-top: -320px;
+    margin-left: 45px;
+    font-size: 45px;
+  }
+
+  .stacking p {
+    margin-left: 45px;
+    font-size: 23px;
+    line-height: 163%;
+    color: #ccc;
+  }
+
+  .stacking-btn {
+    margin-left: 40px;
+    background: #ff7a75;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    height: 60px;
+    font-size: 16px;
+    width: 200px;
+  }
+
+  /*bit platform*/
+
+  .company {
+    margin-top: 250px;
+    margin-left: 0px;
+
+  }
+
+  .company-sec {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  /*DAO*/
+
+  .doa {
+    text-align: center;
+    padding: 80px 20px;
+    margin-left: 30px;
+    text-align: justify;
+  }
+
+  .doa img {
+    margin-left: 1000px;
+    padding-top: 80px;
+    filter: drop-shadow(0 0 80px #7d4dff);
+  }
+
+  .doa h2 {
+    margin-top: -450px;
+    margin-left: 10px;
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+
+  .doa p {
+    margin-left: 10px;
+    font-size: 25px;
+    line-height: 163%;
+    color: #ccc;
+  }
+
+  .doa-btn {
+    margin-left: 8px;
+    background: #ff7a75;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    height: 60px;
+    font-size: 16px;
+    width: 200px;
+  }
+
+  .doa-btn i {
+    padding: 14px;
+  }
+
+  /*Lanchpad*/
+
+  .Launchpad {
+    margin-top: 150px;
+    margin-left: 800px;
+  }
+
+  .Launchpad img {
+    margin-top: -100px;
+    margin-left: -800px;
+    filter: drop-shadow(0 0 30px #7d4dff);
+  }
+
+  .Launchpad h2 {
+    margin-top: -420px;
+    margin-left: 45px;
+    font-size: 45px;
+  }
+
+  .Launchpad p {
+    margin-left: 45px;
+    font-size: 26px;
+    line-height: 163%;
+    color: #ccc;
+    width: 820px;
+  }
+
+  .Launchpad-btn {
+    margin-left: 40px;
+    background: #ff7a75;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    height: 60px;
+    font-size: 16px;
+    width: 200px;
+  }
+
+  /*Learn to earn*/
+
+  .learn {
+    text-align: center;
+    padding: 80px 20px;
+    margin-left: 30px;
+    text-align: justify;
+  }
+
+  .learn img {
+    margin-left: 1000px;
+    padding-top: 80px;
+    filter: drop-shadow(0 0 80px #7d4dff);
+  }
+
+  .learn h2 {
+    margin-top: -280px;
+    margin-left: 10px;
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+
+  .learn p {
+    margin-left: 10px;
+    font-size: 25px;
+    line-height: 163%;
+    color: #ccc;
+  }
+
+  .learn-btn {
+    margin-left: 8px;
+    background: #ff7a75;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    height: 60px;
+    font-size: 16px;
+    width: 200px;
+  }
+
+  .learn-btn i {
+    padding: 14px;
+  }
+
+  /*Seed Funding*/
+
+  .seed {
+    margin-top: 150px;
+    margin-left: 800px;
+  }
+
+  .seed img {
+    margin-top: -50px;
+    margin-left: -700px;
+    filter: drop-shadow(0 0 30px #7d4dff);
+  }
+
+  .seed h2 {
+    margin-top: -320px;
+    margin-left: 45px;
+    font-size: 45px;
+  }
+
+  .seed p {
+    margin-left: 45px;
+    font-size: 26px;
+    line-height: 163%;
+    color: #ccc;
+  }
+
+  .seed-btn {
+    margin-left: 40px;
+    background: #ff7a75;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    height: 60px;
+    font-size: 16px;
+    width: 200px;
+  }
+
+  /*footer  card*/
+
+  .footer-section {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+  }
+
+  .footer-cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+  }
+
+  /*buy your luck card*/
+
+  .lucky-card {
+    border: solid 2px #fff;
+    background: #151b3c;
+    padding: 25px;
+    height: 390px;
+    width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px #1a1f45;
+    margin-left: -100;
+  }
+
+  .lucky-card img {
+    margin-top: 7px;
+    width: 66px;
+    height: 60px;
+    left: 20px;
+    border-radius: 4px;
+    filter: drop-shadow(0px 0px 7px #7d4dff);
+  }
+
+  .lucky-card h3 {
+    margin-top: 10px;
+  }
+
+  .lucky-card p {
+    padding-top: 10px;
+    color: #ccc;
+  }
+
+  .lucky-card h4 {
+    /* margin-top: 20px; */
+    font-size: 22px;
+  }
+
+  .lucky-card i {
+    padding-left: 8px;
+    color: #fff;
+  }
+
+  /*earn crypto card*/
+
+  .reward-card {
+    border: solid 2px #fff;
+    background: #151b3c;
+    padding: 25px;
+    height: 390px;
+    width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px #1a1f45;
+    margin-left: -100;
+  }
+
+  .reward-card img {
+    margin-top: 7px;
+    width: 66px;
+    height: 60px;
+    left: 20px;
+    border-radius: 4px;
+    filter: drop-shadow(0px 0px 7px #7d4dff);
+  }
+
+  .reward-card h3 {
+    margin-top: 10px;
+  }
+
+  .reward-card p {
+    padding-top: 10px;
+    color: #ccc;
+  }
+
+  .reward-card h4 {
+    /* margin-top: 20px; */
+    font-size: 22px;
+  }
+
+  .reward-card i {
+    padding-left: 8px;
+    color: #fff;
+  }
+
+  /*win price card*/
+
+  .win-card {
+    border: solid 2px #fff;
+    background: #151b3c;
+    padding: 25px;
+    height: 390px;
+    width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px #1a1f45;
+    margin-left: -100;
+  }
+
+  .win-card img {
+    margin-top: 7px;
+    width: 66px;
+    height: 60px;
+    left: 20px;
+    border-radius: 4px;
+    filter: drop-shadow(0px 0px 7px #7d4dff);
+  }
+
+  .win-card h3 {
+    margin-top: 10px;
+  }
+
+  .win-card p {
+    padding-top: 10px;
+    color: #ccc;
+  }
+
+  .win-card h4 {
+    font-size: 22px;
+  }
+
+  .win-card i {
+    color: #fff;
+    padding-left: 8px;
+  }
+
+  /*vibrant community*/
+
+  .m-coin {
+    width: 116px;
+    height: 114px;
+    margin-top: 140px;
+    margin-left: 1148px;
+  }
+
+  .bag {
+    width: 119px;
+    height: 140px;
+    margin-top: 360px;
+    margin-left: 1187px;
+  }
+
+  .shild {
+    width: 119px;
+    height: 140px;
+    margin-top: -600px;
+    margin-left: 550px;
+    transform: rotate(-180);
+  }
+
+  .bitcoin {
+    margin-top: -82px;
+    height: 95px;
+    /* margin-left: 207px; */
+    width: 87px;
+
+  }
+
+  .dimond {
+    margin-top: 230px;
+    width: 112px;
+    /* margin-left: 207px; */
+    height: 112px;
+
+
+  }
+
+  .investors {
+    padding-left: 500px;
+    margin-top: -250px;
+  }
+
+  .investors h3 {
+    margin-left: -550px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #f2f8f9;
+  }
+
+  .inv-btn {
+    padding-top: 450px;
+    margin-left: 30px;
+    background: #ff7a75;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    height: 45px;
+    font-size: 16px;
+    width: 170px;
+  }
+
+  /* footer end*/
+
+  .footer-main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+
+  }
+
+  .footer-logo {
+    margin-left: 140px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .footer-1 {
+    margin-left: -90px;
+  }
+
+  .footer-1 h5 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .footer-1 p {
+    margin-top: 15px;
+    color: #ccc;
+  }
+
+  /*footer-2*/
+
+  .footer-2 h5 {
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+
+  }
+
+  .footer-2 p {
+    margin-top: 42px;
+    color: #ccc;
+  }
+
+  /*footer-3*/
+
+  .footer-3 {
+    margin-top: -5px;
+    margin-right: -220px;
+  }
+
+  .footer-3 h5 {
+    margin-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+
+  .footer-3 form {
+    margin-top: 90px;
+    font-weight: bold;
+    padding: 12px;
+    margin: 10px;
+    width: 600px;
+    color: #ccc;
+  }
+
+  .footer-3 input {
+    width: 440px;
+    height: 50px;
+    border-radius: 24px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #0b0f26;
+    color: #ccc;
+    border: solid 1px #848895;
+  }
+
+  .form-btn input {
+    margin-top: 20px;
+    width: 140px;
+    height: 46px;
+    border: 1px solid #848895;
+    color: #ccc;
+    background-color: #0b0f26;
+    margin-left: 8px;
+    padding: 10px 70px 10px 45px;
+    font-size: 16px;
+  }
+
+
+  @media (max-width:600px) {
+
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    nav a {
+      display: block;
+      padding-top: 20px;
+      text-align: center;
+      margin-left: 10px;
+    }
+
+    .btn-nav {
+      margin-top: 30px;
+    }
+
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-text {
+      text-align: center;
+      width: 490px;
+    }
+
+    .load-img {
+      text-align: start;
+      margin-left: 210px;
+    }
+
+    .cards {
+      flex-direction: column;
+    }
+
+    .card {
+      text-align: center;
+      margin-left: 50px;
+    }
+
+    .cardload-img {
+      text-align: start;
+      margin-left: 210px;
+    }
+
+    .stacking {
+      text-align: center;
+      display: block;
+    }
+
+    .stacking img {
+      margin-left: -1090px;
+      width: 460px;
+    }
+
+    .stacking p {
+      margin-left: -720px;
+      width: 350px;
+      margin-top: 30px;
+      text-align: justify;
+    }
+
+    .stacking h2 {
+      margin-left: -700px;
+      width: 200px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .stacking-btn {
+      margin-left: -1200px;
+      margin-top: 50px;
+    }
+
+    .company {
+      margin-top: 120px;
+      width: 540px;
+    }
+
+    .company-sec {
+      width: 540px;
+    }
+
+    .doa {
+      text-align: center;
+      flex-direction: column;
+
+    }
+
+    .doa img {
+      margin-top: 300px;
+      margin-left: -70px;
+    }
+
+    .doa p {
+      text-align: justify;
+      width: 330px;
+
+    }
+
+    .doa h2 {
+      margin-top: -779px;
+      text-align: center;
+      margin-left: -180px;
+
+    }
+
+    .doa-btn {
+      margin-left: -122px;
+      margin-top: 10px;
+    }
+
+    .Launchpad {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .Launchpad img {
+      margin-left: -1030px;
+      margin-top: 180px;
+
+    }
+
+    .Launchpad p {
+      text-align: justify;
+      width: 330px;
+      margin-left: -680px;
+
+    }
+
+    .Launchpad h2 {
+      margin-top: -18px;
+      text-align: center;
+      margin-left: -1080px;
+
+    }
+
+    .Launchpad-btn {
+      margin-left: -1080px;
+      margin-top: 50px;
+    }
+
+    .learn h2
+    {
+      text-align: center;
+      margin-top: -790px;
+    }
+
+    .learn p
+    {
+      width: 330px;
+      text-align: justify;
+      margin-left: 80px;
+    }
+
+    .learn-btn
+    {
+      margin-left:80px ;
+    }
+
+    .learn img
+    {
+      margin-top: 400px;
+      margin-left: -20px;
+    }
+
+    .seed img
+    {
+      margin-top: 400px;
+      margin-left: -780px;
+    }
+
+    .seed p
+    {
+      width: 330px;
+      text-align: justify;
+      margin-left: -680px;
+    }
+
+    .seed h2
+    {
+      margin-top: 120px;
+      width: 820px;
+     margin-left: -660px;
+    }
+
+    .seed-btn
+    {
+      margin-left: -620px;
+    }
+
+    .footer-cards
+    {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .container
+    {
+       /* flex-direction: column; */
+      text-align: center;
+      display: block;
+    }
+
+    .footer-main
+    {
+      flex-direction: column;
+      margin-left: 30px;
+    }
+
+    .footer-1
+    {
+      margin-left :30px; 
+    }
+
+    .footer-2
+    {
+      margin-left :30px; 
+    }
+
+    .footer-2 p
+    {
+      margin-top :-4px;
+    }
+    .footer-3
+    {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<body>
+  <section class="nav-bar">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold" href="#" style="color: white;">ALIHASSAN</a>
+
+      <!-- Toggler Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Centered Nav Links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Eco System</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Winners</a></li>
+        </ul>
+
+        <!-- Launch App Button (spaced from links) -->
+        <div class="nav-btn ms-lg-3">
+          <button type="button" class="btn btn-warning">
+            Launch App
+            <i class="fa-solid fa-rocket"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- crypto Revolution -->
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Embrace the</h1>
+      <h1>Crypto Revolution</h1><br>
+      <p>Power your Future with Blockchain</p><br>
+      <button class="btn-hero">Learn More</button>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/block/Group 15.png" alt="crypto" width=663px; height="570px">
+    </div>
+  </section>
+
+  <div class="load-img">
+    <img src="images/block/Frame 27 (1).png" alt="">
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!-- Lottery -->
+
+  <section class="card-section">
+    <h2>Lottery</h2><br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit aliquam. Dicta, ratione vitae sunt, iste
+      magni obcaecati praesentium rerum quis reiciendis maxime ad nesciunt perspiciatis ea libero. Tempore,
+      perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit praesentium temporibus velit impedit r
+    </p><br>
+    <div class="cards">
+      <div class="card">
+        <img src="images/block/Frame 73.png" alt="" width="320px" height="420px">
+        <div class="lottery-btn">
+          <button class="price-btn">Prizes</button>
+          <button class="card-btn">Join Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/block/Frame 73.png" alt="" width="320px" height="420px">
+        <div class="lottery-btn">
+          <button class="price-btn">Prizes</button>
+          <button class="card-btn">View</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/block/Frame 73.png" alt="" width="320px" height="420px">
+        <div class="lottery-btn">
+          <button class="price-btn">Prizes</button>
+          <button class="card-btn">Buy Ticket</button>
+        </div>
+      </div>
+  </section>
+  <br>
+  <div class=" cardload-img">
+    <img src="images/block/Frame 27 (1).png" alt="">
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!-- stacking -->
+
+  <section class="stacking">
+    <img src="images/block/Layer_1.png" alt="">
+    <h2>Staking</h2><br>
+    <p>Maximize the potential of your cryptocurrencies by staking them on our secure and reliable platform. </p><br>
+    <button class="stacking-btn">Start Staking <i class="fa-solid fa-arrow-right"></i></button>
+  </section>
+
+  <!-- bit platform -->
+
+  <div class="company">
+    <img src="images/block/Frame 81.png" alt="" width="100%" height="57px">
+  </div>
+  <div class="company-sec">
+    <img src="images/block/Frame 82.png" alt="" width="100%" height="57px">
+  </div>
+
+  <!-- DOA -->
+
+  <section class="doa">
+    <img src="images/block/doa.png" alt="" class="doa-img">
+    <h2>DAO</h2>
+    <p>Join our decentralized community and take part in
+      sharping the future of our project</p><br>
+    <button class="doa-btn">Join DAO<i class="fa-solid fa-arrow-right"></i></button>
+  </section>
+
+  <!-- Launchpad -->
+  <br><br>
+  <section class="Launchpad">
+    <img src="images/block/rocket.png" alt="">
+    <h2>Launchpad</h2><br>
+    <p>Discover the next big thing in the blockchain
+      world through our exclution launchpad platform</p><br>
+    <button class="Launchpad-btn">Explore Projects<i class="fa-solid fa-arrow-right"></i></button>
+  </section>
+
+  <!-- Learn to Earn -->
+
+  <section class="learn">
+    <img src="images/block/learn.png" alt="">
+    <h2>Learn to Earn</h2><br>
+    <p>Unleash your potential in the crypto space with
+    our Learn to Earn program</p><br>
+    <button class="learn-btn">Start Learning</button>
+  </section>
+
+  <!-- seed funding -->
+
+  <section class="seed">
+    <img src="images/block/seed.png" alt="">
+    <h2>Seed Funding</h2><br>
+    <p>Are you a promising blockchain project in need of
+    seed funding? look no further</p><br>
+    <button class="seed-btn">Apply Funding</button>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- footer card -->
+  <section class="footer-section">
+    <div class="footer-cards">
+      <div class="lucky-card">
+        <img src="images/block/footer-1.png" alt=""><br>
+        <h3>Buy your lucky block NFT</h3><br>
+        <p>Join our decentralize community</p>
+        <p>and take part in shaping the future of</p>
+        <p>our project.As a member of our DAO,</p><br>
+        <h4>View Competitions <i class="fa-solid fa-arrow-right"></i></h4>
+      </div>
+
+
+      <div class="reward-card">
+        <img src="images/block/footer-2.png" alt=""><br>
+        <h3>Buy your lucky block NFT</h3><br>
+        <p>Join our decentralize community</p>
+        <p>and take part in shaping the future of</p>
+        <p>our project.As a member of our DAO,</p><br>
+        <h4>View Competitions <i class="fa-solid fa-arrow-right"></i></h4>
+      </div>
+
+
+      <div class="win-card">
+        <img src="images/block/footer-3.png" alt=""><br>
+        <h3>Buy your lucky block NFT</h3><br>
+        <p>Join our decentralize community</p>
+        <p>and take part in shaping the future of</p>
+        <p>our project.As a member of our DAO,</p><br>
+        <h4>View Competitions <i class="fa-solid fa-arrow-right"></i></h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- vibrent community -->
+
+  <section class="container">
+    <div class="m-coin">
+      <img src="images/block/king coin.png" alt="">
+    </div>
+
+    <div class="bag">
+      <img src="images/block/bag.png" alt="">
+    </div>
+
+    <div class="shild">
+      <img src="images/block/shild.png" alt="">
+    </div>
+
+    <div class="bitcoin">
+      <img src="images/block/Bitcoin-1.png" alt="">
+    </div>
+
+    <div class="dimond">
+      <img src="images/block/dimond.png" alt="">
+    </div>
+
+    <div class="investors">
+      <h3>Join our vibrant community of crypto enthusiasts,</h3>
+      <h3>investors,and innovators.</h3><br><br><br><br>
+      <button class="inv-btn">call to Action</button>
+    </div>
+  </section>
+  <br><br><br><br><br><br><br><br>
+
+  <!-- footer end -->
+
+  <footer>
+    <div class="footer-logo">ALHASSAN</div>
+    <section class="footer-main">
+      <div class="footer-1">
+        <br><br>
+        <h5>Business Address</h5>
+        <p>1590 peyton Radial,1590 Peyton Radial,</p>
+        <p>oregon,47173</p>
+        <br><br>
+        <h5>Email</h5>
+        <p>hello@beechain.io</p>
+        <p>contact@blockchain.io</p>
+        <br><br>
+        <p>© 2025 Aurora Crypto Platform. All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-2">
+        <h5>Docs</h5>
+        <p>FAQs</p><br>
+        <p>White Paper</p><br>
+        <p>Rewards</p><br>
+      </div>
+
+      <div class="footer-3">
+        <h5>Sign up</h5>
+        <form>
+          <input type="text" placeholder="Your Name" pattern="[A-Za-z]{6,}" required /><br><br>
+          <input type="" placeholder="Phone Number" pattern="[1-9]{4,}" required /><br><br>
+          <input type="email" placeholder="Email"><br><br>
+          <input type="text" placeholder="Address" pattern="[A-Za-z]{5,}" /><br>
+          <div class="form-btn"><input type="submit" value="SEND"></div>
+        </form>
+      </div>
+
+    </section>
+  </footer><br><br><br><br><br><br>
+</body>
+
+</html>
