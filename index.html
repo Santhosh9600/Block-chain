@@ -27,6 +27,7 @@
   body {
     background: #0b0f26;
     color: #fff;
+    overflow-x: hidden;
   }
 
   /* Header */
@@ -65,7 +66,6 @@
     color: black;
     font-size: 20px;
     font-weight: bolder;
-
   }
 
   .btn-primary {
@@ -117,6 +117,8 @@
 
   .hero-image img {
     filter: drop-shadow(0 0 30px #7d4dff);
+    max-width: 100%;
+    height: auto;
   }
 
   .load-img {
@@ -159,6 +161,8 @@
 
   .card img {
     margin-top: 55px;
+    max-width: 100%;
+    height: auto;
   }
 
   .lottery-btn {
@@ -195,7 +199,7 @@
     width: 400px;
   }
 
-  /*loading img*/
+  /* /loading img/ */
 
   .cardload-img {
     margin-top: 70px;
@@ -213,7 +217,8 @@
     margin-top: -100px;
     margin-left: -730px;
     filter: drop-shadow(0 0 30px #7d4dff);
-
+    max-width: 100%;
+    height: auto;
   }
 
   .stacking h2 {
@@ -243,12 +248,11 @@
     width: 200px;
   }
 
-  /*bit platform*/
+  /* /bit platform/ */
 
   .company {
     margin-top: 250px;
     margin-left: 0px;
-
   }
 
   .company-sec {
@@ -256,7 +260,7 @@
     margin-left: 0px;
   }
 
-  /*DAO*/
+  /* /DAO/ */
 
   .doa {
     text-align: center;
@@ -269,6 +273,8 @@
     margin-left: 1000px;
     padding-top: 80px;
     filter: drop-shadow(0 0 80px #7d4dff);
+    max-width: 100%;
+    height: auto;
   }
 
   .doa h2 {
@@ -303,7 +309,7 @@
     padding: 14px;
   }
 
-  /*Lanchpad*/
+  /* /Lanchpad/ */
 
   .Launchpad {
     margin-top: 150px;
@@ -314,6 +320,8 @@
     margin-top: -100px;
     margin-left: -800px;
     filter: drop-shadow(0 0 30px #7d4dff);
+    max-width: 100%;
+    height: auto;
   }
 
   .Launchpad h2 {
@@ -344,7 +352,7 @@
     width: 200px;
   }
 
-  /*Learn to earn*/
+  /* /Learn to earn/ */
 
   .learn {
     text-align: center;
@@ -357,6 +365,8 @@
     margin-left: 1000px;
     padding-top: 80px;
     filter: drop-shadow(0 0 80px #7d4dff);
+    max-width: 100%;
+    height: auto;
   }
 
   .learn h2 {
@@ -391,7 +401,7 @@
     padding: 14px;
   }
 
-  /*Seed Funding*/
+  /* /Seed Funding/ */
 
   .seed {
     margin-top: 150px;
@@ -402,6 +412,8 @@
     margin-top: -50px;
     margin-left: -700px;
     filter: drop-shadow(0 0 30px #7d4dff);
+    max-width: 100%;
+    height: auto;
   }
 
   .seed h2 {
@@ -431,7 +443,7 @@
     width: 200px;
   }
 
-  /*footer  card*/
+  /* /footer  card/ */
 
   .footer-section {
     display: flex;
@@ -446,7 +458,7 @@
     margin-top: 30px;
   }
 
-  /*buy your luck card*/
+  /* /buy your luck card/ */
 
   .lucky-card {
     border: solid 2px #fff;
@@ -488,7 +500,7 @@
     color: #fff;
   }
 
-  /*earn crypto card*/
+  /* /earn crypto card/ */
 
   .reward-card {
     border: solid 2px #fff;
@@ -530,7 +542,7 @@
     color: #fff;
   }
 
-  /*win price card*/
+  /* /win price card/ */
 
   .win-card {
     border: solid 2px #fff;
@@ -571,7 +583,7 @@
     padding-left: 8px;
   }
 
-  /*vibrant community*/
+  /* /vibrant community/ */
 
   .m-coin {
     width: 116px;
@@ -600,7 +612,6 @@
     height: 95px;
     /* margin-left: 207px; */
     width: 87px;
-
   }
 
   .dimond {
@@ -608,8 +619,6 @@
     width: 112px;
     /* margin-left: 207px; */
     height: 112px;
-
-
   }
 
   .investors {
@@ -647,7 +656,6 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 30px;
-
   }
 
   .footer-logo {
@@ -670,13 +678,12 @@
     color: #ccc;
   }
 
-  /*footer-2*/
+  /* /footer-2/ */
 
   .footer-2 h5 {
     margin-top: 40px;
     font-size: 25px;
     font-weight: bold;
-
   }
 
   .footer-2 p {
@@ -684,7 +691,7 @@
     color: #ccc;
   }
 
-  /*footer-3*/
+  /* /footer-3/ */
 
   .footer-3 {
     margin-top: -5px;
@@ -698,7 +705,6 @@
     font-size: 25px;
     font-weight: bold;
   }
-
 
   .footer-3 form {
     margin-top: 90px;
@@ -733,240 +739,305 @@
     font-size: 16px;
   }
 
+  /* ========== RESPONSIVE DESIGN ========== */
 
-  @media (max-width:600px) {
+  /* Large devices (desktops, less than 1200px) */
+  @media (max-width: 1199.98px) {
+    .hero-text h1 {
+      font-size: 60px;
+    }
+    
+    .hero-text p {
+      font-size: 24px;
+    }
+    
+    .btn-hero {
+      margin-right: 0;
+    }
+    
+    .load-img, .cardload-img {
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .stacking, .Launchpad, .seed {
+      margin-left: 0;
+    }
+    
+    .stacking img, .Launchpad img, .seed img {
+      margin-left: 0;
+    }
+    
+    .doa img, .learn img {
+      margin-left: 0;
+    }
+  }
 
+  /* Medium devices (tablets, less than 992px) */
+  @media (max-width: 991.98px) {
     header {
-      flex-direction: column;
-      text-align: center;
+      padding: 20px 30px;
     }
-
-    .logo {
-      text-align: center;
-    }
-
+    
     nav a {
-      display: block;
-      padding-top: 20px;
-      text-align: center;
-      margin-left: 10px;
+      margin-left: 40px;
     }
-
-    .btn-nav {
-      margin-top: 30px;
-    }
-
+    
     .hero {
       flex-direction: column;
       text-align: center;
+      padding: 80px 20px;
     }
-
-    .hero-text {
-      text-align: center;
-      width: 490px;
-    }
-
-    .load-img {
-      text-align: start;
-      margin-left: 210px;
-    }
-
-    .cards {
-      flex-direction: column;
-    }
-
-    .card {
-      text-align: center;
-      margin-left: 50px;
-    }
-
-    .cardload-img {
-      text-align: start;
-      margin-left: 210px;
-    }
-
-    .stacking {
-      text-align: center;
-      display: block;
-    }
-
-    .stacking img {
-      margin-left: -1090px;
-      width: 460px;
-    }
-
-    .stacking p {
-      margin-left: -720px;
-      width: 350px;
-      margin-top: 30px;
-      text-align: justify;
-    }
-
-    .stacking h2 {
-      margin-left: -700px;
-      width: 200px;
-      margin-top: 50px;
-      text-align: center;
-    }
-
-    .stacking-btn {
-      margin-left: -1200px;
-      margin-top: 50px;
-    }
-
-    .company {
-      margin-top: 120px;
-      width: 540px;
-    }
-
-    .company-sec {
-      width: 540px;
-    }
-
-    .doa {
-      text-align: center;
-      flex-direction: column;
-
-    }
-
-    .doa img {
-      margin-top: 300px;
-      margin-left: -70px;
-    }
-
-    .doa p {
-      text-align: justify;
-      width: 330px;
-
-    }
-
-    .doa h2 {
-      margin-top: -779px;
-      text-align: center;
-      margin-left: -180px;
-
-    }
-
-    .doa-btn {
-      margin-left: -122px;
-      margin-top: 10px;
-    }
-
-    .Launchpad {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .Launchpad img {
-      margin-left: -1030px;
-      margin-top: 180px;
-
-    }
-
-    .Launchpad p {
-      text-align: justify;
-      width: 330px;
-      margin-left: -680px;
-
-    }
-
-    .Launchpad h2 {
-      margin-top: -18px;
-      text-align: center;
-      margin-left: -1080px;
-
-    }
-
-    .Launchpad-btn {
-      margin-left: -1080px;
-      margin-top: 50px;
-    }
-
-    .learn h2
-    {
-      text-align: center;
-      margin-top: -790px;
-    }
-
-    .learn p
-    {
-      width: 330px;
-      text-align: justify;
-      margin-left: 80px;
-    }
-
-    .learn-btn
-    {
-      margin-left:80px ;
-    }
-
-    .learn img
-    {
-      margin-top: 400px;
-      margin-left: -20px;
-    }
-
-    .seed img
-    {
-      margin-top: 400px;
-      margin-left: -780px;
-    }
-
-    .seed p
-    {
-      width: 330px;
-      text-align: justify;
-      margin-left: -680px;
-    }
-
-    .seed h2
-    {
-      margin-top: 120px;
-      width: 820px;
-     margin-left: -660px;
-    }
-
-    .seed-btn
-    {
-      margin-left: -620px;
-    }
-
-    .footer-cards
-    {
-      flex-direction: column;
+    
+    .hero-text h1, .hero-text p {
+      margin-left: 0;
       text-align: center;
     }
     
-    .container
-    {
-       /* flex-direction: column; */
+    .btn-hero {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .hero-image img {
+      width: 80%;
+      height: auto;
+    }
+    
+    .cards, .footer-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    
+    .card, .lucky-card, .reward-card, .win-card {
+      width: 90%;
+      max-width: 400px;
+    }
+    
+    .card-btn, .price-btn {
+      width: 100%;
+      margin-left: 0;
+    }
+    
+    .stacking, .Launchpad, .seed {
       text-align: center;
-      display: block;
     }
-
-    .footer-main
-    {
+    
+    .stacking h2, .Launchpad h2, .seed h2 {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    
+    .stacking p, .Launchpad p, .seed p {
+      margin-left: 0;
+    }
+    
+    .stacking-btn, .Launchpad-btn, .seed-btn {
+      margin-left: 0;
+    }
+    
+    .doa, .learn {
+      text-align: center;
+    }
+    
+    .doa h2, .learn h2 {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    
+    .doa p, .learn p {
+      margin-left: 0;
+    }
+    
+    .doa-btn, .learn-btn {
+      margin-left: 0;
+    }
+    
+    .footer-main {
       flex-direction: column;
-      margin-left: 30px;
+      align-items: center;
+      text-align: center;
     }
+    
+    .footer-logo {
+      margin-left: 0;
+      text-align: center;
+    }
+    
+    .footer-1, .footer-2, .footer-3 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .footer-3 form {
+      width: 100%;
+    }
+    
+    .footer-3 input {
+      width: 100%;
+    }
+    
+    .form-btn input {
+      width: 100%;
+      margin-left: 0;
+    }
+    
+    .m-coin, .bag, .shild, .bitcoin, .dimond {
+      display: none;
+    }
+    
+    .investors {
+      padding-left: 0;
+      margin-top: 0;
+      text-align: center;
+    }
+    
+    .investors h3 {
+      margin-left: 0;
+    }
+    
+    .inv-btn {
+      padding-top: 0;
+      margin-left: 0;
+    }
+  }
 
-    .footer-1
-    {
-      margin-left :30px; 
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) {
+    header {
+      padding: 15px 20px;
     }
+    
+    nav a {
+      margin-left: 20px;
+      font-size: 18px;
+    }
+    
+    .btn-nav {
+      width: 150px;
+      height: 45px;
+      font-size: 18px;
+    }
+    
+    .hero-text h1 {
+      font-size: 40px;
+    }
+    
+    .hero-text p {
+      font-size: 20px;
+    }
+    
+    .btn-hero {
+      width: 140px;
+      height: 45px;
+    }
+    
+    .card-section h2, .stacking h2, .doa h2, .Launchpad h2, .learn h2, .seed h2 {
+      font-size: 35px;
+    }
+    
+    .card-section p, .stacking p, .doa p, .Launchpad p, .learn p, .seed p {
+      font-size: 16px;
+    }
+    
+    .card, .lucky-card, .reward-card, .win-card {
+      height: auto;
+      padding: 20px;
+    }
+    
+    .stacking-btn, .doa-btn, .Launchpad-btn, .learn-btn, .seed-btn, .inv-btn {
+      width: 180px;
+      height: 50px;
+    }
+    
+    .footer-1 h5, .footer-2 h5, .footer-3 h5 {
+      font-size: 20px;
+    }
+  }
 
-    .footer-2
-    {
-      margin-left :30px; 
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    header {
+      padding: 10px 15px;
     }
+    
+    nav a {
+      margin-left: 10px;
+      font-size: 16px;
+    }
+    
+    .btn-nav {
+      width: 130px;
+      height: 40px;
+      font-size: 16px;
+    }
+    
+    .hero {
+      padding: 60px 15px;
+    }
+    
+    .hero-text h1 {
+      font-size: 32px;
+    }
+    
+    .hero-text p {
+      font-size: 18px;
+    }
+    
+    .btn-hero {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+    }
+    
+    .card-section h2, .stacking h2, .doa h2, .Launchpad h2, .learn h2, .seed h2 {
+      font-size: 28px;
+    }
+    
+    .card-section p, .stacking p, .doa p, .Launchpad p, .learn p, .seed p {
+      font-size: 14px;
+    }
+    
+    .card, .lucky-card, .reward-card, .win-card {
+      width: 95%;
+      padding: 15px;
+    }
+    
+    .stacking-btn, .doa-btn, .Launchpad-btn, .learn-btn, .seed-btn, .inv-btn {
+      width: 160px;
+      height: 45px;
+      font-size: 14px;
+    }
+    
+    .footer-1 h5, .footer-2 h5, .footer-3 h5 {
+      font-size: 18px;
+    }
+    
+    .footer-3 input {
+      height: 45px;
+      font-size: 16px;
+    }
+  }
 
-    .footer-2 p
-    {
-      margin-top :-4px;
+  /* Very small devices (less than 400px) */
+  @media (max-width: 399.98px) {
+    .hero-text h1 {
+      font-size: 28px;
     }
-    .footer-3
-    {
-      flex-direction: column;
+    
+    .hero-text p {
+      font-size: 16px;
+    }
+    
+    .card-section h2, .stacking h2, .doa h2, .Launchpad h2, .learn h2, .seed h2 {
+      font-size: 24px;
+    }
+    
+    .stacking-btn, .doa-btn, .Launchpad-btn, .learn-btn, .seed-btn, .inv-btn {
+      width: 140px;
+      height: 40px;
+      font-size: 12px;
     }
   }
 </style>
@@ -1238,3 +1309,16 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
