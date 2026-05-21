@@ -24,6 +24,14 @@
     font-family: Arial, sans-serif;
   }
 
+  section {
+  padding-top: 60px; 
+}
+
+  section {
+  scroll-margin-top: 70px; 
+}
+
   body {
     background: #0b0f26;
     color: #fff;
@@ -739,307 +747,469 @@
     font-size: 16px;
   }
 
-  /* ========== RESPONSIVE DESIGN ========== */
-
-  /* Large devices (desktops, less than 1200px) */
-  @media (max-width: 1199.98px) {
-    .hero-text h1 {
-      font-size: 60px;
+  /* Responsive */
+  @media (max-width: 1200px) {
+    nav a {
+      margin-left: 28px;
+      font-size: 18px;
     }
-    
+
+    .hero {
+      padding: 90px 30px;
+      gap: 35px;
+    }
+
+    .hero-text h1 {
+      font-size: 56px;
+    }
+
     .hero-text p {
       font-size: 24px;
     }
-    
-    .btn-hero {
+
+    .cards,
+    .footer-cards {
+      gap: 35px;
+      padding: 0 25px;
+    }
+
+    .card,
+    .lucky-card,
+    .reward-card,
+    .win-card {
+      width: 31%;
+      margin-left: 0;
+    }
+
+    .load-img,
+    .cardload-img {
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .stacking,
+    .Launchpad,
+    .seed {
+      margin-left: 0;
+      padding: 80px 45px;
+    }
+
+    .stacking img,
+    .Launchpad img,
+    .seed img {
+      margin-left: 0;
+      max-width: 45%;
+    }
+
+    .stacking h2,
+    .stacking p,
+    .stacking-btn,
+    .Launchpad h2,
+    .Launchpad p,
+    .Launchpad-btn,
+    .seed h2,
+    .seed p,
+    .seed-btn {
+      margin-left: 52%;
+    }
+
+    .Launchpad p {
+      width: auto;
+    }
+
+    .doa img,
+    .learn img {
+      margin-left: 60%;
+      max-width: 36%;
+    }
+
+    .footer-main {
+      gap: 30px;
+      padding: 30px 40px 0;
+    }
+
+    .footer-logo,
+    .footer-1,
+    .footer-3 {
+      margin-left: 0;
       margin-right: 0;
-    }
-    
-    .load-img, .cardload-img {
-      margin-left: 50%;
-      transform: translateX(-50%);
-    }
-    
-    .stacking, .Launchpad, .seed {
-      margin-left: 0;
-    }
-    
-    .stacking img, .Launchpad img, .seed img {
-      margin-left: 0;
-    }
-    
-    .doa img, .learn img {
-      margin-left: 0;
     }
   }
 
-  /* Medium devices (tablets, less than 992px) */
-  @media (max-width: 991.98px) {
-    header {
-      padding: 20px 30px;
+  @media (max-width: 991px) {
+    section {
+      padding-top: 45px;
     }
-    
+
+    .navbar-nav {
+      padding-top: 15px;
+    }
+
     nav a {
-      margin-left: 40px;
+      margin: 8px 0;
+      font-size: 17px;
     }
-    
+
+    .nav-btn {
+      margin-top: 12px;
+    }
+
     .hero {
       flex-direction: column;
       text-align: center;
-      padding: 80px 20px;
+      padding: 70px 24px;
     }
-    
-    .hero-text h1, .hero-text p {
-      margin-left: 0;
-      text-align: center;
-    }
-    
+
+    .hero-text h1,
+    .hero-text p,
     .btn-hero {
       margin-left: 0;
       margin-right: 0;
+      text-align: center;
     }
-    
+
+    .hero-text h1 {
+      font-size: 48px;
+    }
+
+    .hero-text p {
+      font-size: 22px;
+    }
+
     .hero-image img {
-      width: 80%;
-      height: auto;
+      width: 85%;
     }
-    
-    .cards, .footer-cards {
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
+
+    .card-section h2,
+    .card-section p {
+      margin-left: 0;
+      padding: 0 24px;
+      text-align: center;
     }
-    
-    .card, .lucky-card, .reward-card, .win-card {
-      width: 90%;
+
+    .cards,
+    .footer-cards {
+      flex-wrap: wrap;
+      gap: 28px;
+    }
+
+    .card,
+    .lucky-card,
+    .reward-card,
+    .win-card {
+      width: calc(50% - 20px);
       max-width: 400px;
     }
-    
-    .card-btn, .price-btn {
-      width: 100%;
+
+    .card-btn,
+    .price-btn {
+      width: 50%;
       margin-left: 0;
     }
-    
-    .stacking, .Launchpad, .seed {
+
+    .stacking,
+    .doa,
+    .Launchpad,
+    .learn,
+    .seed {
+      margin: 60px 0 0;
+      padding: 55px 24px;
       text-align: center;
     }
-    
-    .stacking h2, .Launchpad h2, .seed h2 {
-      margin-top: 0;
-      margin-left: 0;
+
+    .stacking img,
+    .doa img,
+    .Launchpad img,
+    .learn img,
+    .seed img {
+      display: block;
+      max-width: 70%;
+      margin: 0 auto 28px;
+      padding-top: 0;
     }
-    
-    .stacking p, .Launchpad p, .seed p {
-      margin-left: 0;
+
+    .stacking h2,
+    .stacking p,
+    .stacking-btn,
+    .doa h2,
+    .doa p,
+    .doa-btn,
+    .Launchpad h2,
+    .Launchpad p,
+    .Launchpad-btn,
+    .learn h2,
+    .learn p,
+    .learn-btn,
+    .seed h2,
+    .seed p,
+    .seed-btn {
+      margin: 0 auto 16px;
+      text-align: center;
+      width: auto;
     }
-    
-    .stacking-btn, .Launchpad-btn, .seed-btn {
-      margin-left: 0;
+
+    .stacking h2,
+    .doa h2,
+    .Launchpad h2,
+    .learn h2,
+    .seed h2 {
+      font-size: 38px;
     }
-    
-    .doa, .learn {
+
+    .stacking p,
+    .doa p,
+    .Launchpad p,
+    .learn p,
+    .seed p {
+      max-width: 720px;
+      font-size: 21px;
+    }
+
+    .company {
+      margin-top: 90px;
+    }
+
+    .container {
+      max-width: 100%;
       text-align: center;
     }
-    
-    .doa h2, .learn h2 {
-      margin-top: 0;
+
+    .m-coin,
+    .bag,
+    .shild,
+    .bitcoin,
+    .dimond {
+      display: inline-block;
+      width: 78px;
+      height: auto;
+      margin: 18px;
+      vertical-align: middle;
+      transform: none;
+    }
+
+    .m-coin img,
+    .bag img,
+    .shild img,
+    .bitcoin img,
+    .dimond img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .investors {
+      padding-left: 0;
+      margin-top: 25px;
+    }
+
+    .investors h3 {
+      margin-left: 0;
+      font-size: 24px;
+    }
+
+    .inv-btn {
       margin-left: 0;
     }
-    
-    .doa p, .learn p {
-      margin-left: 0;
-    }
-    
-    .doa-btn, .learn-btn {
-      margin-left: 0;
-    }
-    
+
     .footer-main {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      flex-wrap: wrap;
+      justify-content: flex-start;
     }
-    
-    .footer-logo {
-      margin-left: 0;
-      text-align: center;
+
+    .footer-1,
+    .footer-2,
+    .footer-3 {
+      width: calc(50% - 20px);
     }
-    
-    .footer-1, .footer-2, .footer-3 {
-      margin-left: 0;
-      margin-right: 0;
-    }
-    
+
     .footer-3 form {
       width: 100%;
     }
-    
+
     .footer-3 input {
       width: 100%;
     }
-    
-    .form-btn input {
+  }
+
+  @media (max-width: 767px) {
+    .hero {
+      padding: 55px 18px;
+    }
+
+    .hero-text h1 {
+      font-size: 38px;
+      line-height: 1.15;
+    }
+
+    .hero-text p {
+      font-size: 19px;
+    }
+
+    .hero-image img {
       width: 100%;
-      margin-left: 0;
     }
-    
-    .m-coin, .bag, .shild, .bitcoin, .dimond {
-      display: none;
+
+    .load-img,
+    .cardload-img {
+      margin-top: 20px;
+      padding: 0 18px;
     }
-    
-    .investors {
-      padding-left: 0;
-      margin-top: 0;
+
+    .load-img img,
+    .cardload-img img {
+      max-width: 100%;
+    }
+
+    .card-section h2 {
+      font-size: 36px;
+    }
+
+    .cards,
+    .footer-cards {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 18px;
+    }
+
+    .card,
+    .lucky-card,
+    .reward-card,
+    .win-card {
+      width: 100%;
+      height: auto;
+      min-height: 360px;
+    }
+
+    .card img {
+      margin-top: 20px;
+    }
+
+    .lottery-btn {
+      margin-top: 25px;
+    }
+
+    .stacking img,
+    .doa img,
+    .Launchpad img,
+    .learn img,
+    .seed img {
+      max-width: 88%;
+    }
+
+    .stacking h2,
+    .doa h2,
+    .Launchpad h2,
+    .learn h2,
+    .seed h2 {
+      font-size: 34px;
+    }
+
+    .stacking p,
+    .doa p,
+    .Launchpad p,
+    .learn p,
+    .seed p {
+      font-size: 18px;
+    }
+
+    .footer-section {
+      margin-top: 50px;
+    }
+
+    .footer-logo {
+      padding: 0 24px;
+      font-size: 26px;
       text-align: center;
     }
-    
+
+    .footer-main {
+      display: block;
+      padding: 20px 24px 0;
+      text-align: center;
+    }
+
+    .footer-1,
+    .footer-2,
+    .footer-3 {
+      width: 100%;
+      margin: 0 0 30px;
+    }
+
+    .footer-2 h5,
+    .footer-3 h5 {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+
+    .footer-3 form {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+
+    .hero-text h1 {
+      font-size: 31px;
+    }
+
+    .hero-text p {
+      font-size: 17px;
+    }
+
+    .btn-hero,
+    .stacking-btn,
+    .doa-btn,
+    .Launchpad-btn,
+    .learn-btn,
+    .seed-btn {
+      width: 100%;
+      max-width: 220px;
+    }
+
+    .lottery-btn {
+      flex-direction: column;
+    }
+
+    .card-btn,
+    .price-btn {
+      width: 100%;
+    }
+
+    .card-section p {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .m-coin,
+    .bag,
+    .shild,
+    .bitcoin,
+    .dimond {
+      width: 58px;
+      margin: 10px;
+    }
+
     .investors h3 {
-      margin-left: 0;
-    }
-    
-    .inv-btn {
-      padding-top: 0;
-      margin-left: 0;
-    }
-  }
-
-  /* Small devices (landscape phones, less than 768px) */
-  @media (max-width: 767.98px) {
-    header {
-      padding: 15px 20px;
-    }
-    
-    nav a {
-      margin-left: 20px;
-      font-size: 18px;
-    }
-    
-    .btn-nav {
-      width: 150px;
-      height: 45px;
-      font-size: 18px;
-    }
-    
-    .hero-text h1 {
-      font-size: 40px;
-    }
-    
-    .hero-text p {
       font-size: 20px;
+      line-height: 1.45;
     }
-    
-    .btn-hero {
-      width: 140px;
-      height: 45px;
-    }
-    
-    .card-section h2, .stacking h2, .doa h2, .Launchpad h2, .learn h2, .seed h2 {
-      font-size: 35px;
-    }
-    
-    .card-section p, .stacking p, .doa p, .Launchpad p, .learn p, .seed p {
-      font-size: 16px;
-    }
-    
-    .card, .lucky-card, .reward-card, .win-card {
-      height: auto;
-      padding: 20px;
-    }
-    
-    .stacking-btn, .doa-btn, .Launchpad-btn, .learn-btn, .seed-btn, .inv-btn {
-      width: 180px;
-      height: 50px;
-    }
-    
-    .footer-1 h5, .footer-2 h5, .footer-3 h5 {
-      font-size: 20px;
-    }
-  }
 
-  /* Extra small devices (portrait phones, less than 576px) */
-  @media (max-width: 575.98px) {
-    header {
-      padding: 10px 15px;
-    }
-    
-    nav a {
-      margin-left: 10px;
-      font-size: 16px;
-    }
-    
-    .btn-nav {
-      width: 130px;
-      height: 40px;
-      font-size: 16px;
-    }
-    
-    .hero {
-      padding: 60px 15px;
-    }
-    
-    .hero-text h1 {
-      font-size: 32px;
-    }
-    
-    .hero-text p {
-      font-size: 18px;
-    }
-    
-    .btn-hero {
-      width: 120px;
-      height: 40px;
-      font-size: 14px;
-    }
-    
-    .card-section h2, .stacking h2, .doa h2, .Launchpad h2, .learn h2, .seed h2 {
-      font-size: 28px;
-    }
-    
-    .card-section p, .stacking p, .doa p, .Launchpad p, .learn p, .seed p {
-      font-size: 14px;
-    }
-    
-    .card, .lucky-card, .reward-card, .win-card {
-      width: 95%;
-      padding: 15px;
-    }
-    
-    .stacking-btn, .doa-btn, .Launchpad-btn, .learn-btn, .seed-btn, .inv-btn {
-      width: 160px;
-      height: 45px;
-      font-size: 14px;
-    }
-    
-    .footer-1 h5, .footer-2 h5, .footer-3 h5 {
-      font-size: 18px;
-    }
-    
     .footer-3 input {
-      height: 45px;
+      height: 48px;
       font-size: 16px;
+    }
+
+    .form-btn input {
+      max-width: 160px;
+      padding: 10px;
     }
   }
 
-  /* Very small devices (less than 400px) */
-  @media (max-width: 399.98px) {
-    .hero-text h1 {
-      font-size: 28px;
-    }
-    
-    .hero-text p {
-      font-size: 16px;
-    }
-    
-    .card-section h2, .stacking h2, .doa h2, .Launchpad h2, .learn h2, .seed h2 {
-      font-size: 24px;
-    }
-    
-    .stacking-btn, .doa-btn, .Launchpad-btn, .learn-btn, .seed-btn, .inv-btn {
-      width: 140px;
-      height: 40px;
-      font-size: 12px;
-    }
-  }
+
 </style>
 
 <body>
@@ -1060,10 +1230,10 @@
         <!-- Centered Nav Links -->
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Eco System</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Winners</a></li>
+          <li class="nav-item"><a class="nav-link" href="#eco">Eco System</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#winner">Winners</a></li>
         </ul>
 
         <!-- Launch App Button (spaced from links) -->
@@ -1079,7 +1249,7 @@
 
   <!-- crypto Revolution -->
 
-  <section class="hero">
+  <section class="hero" >
     <div class="hero-text">
       <h1>Embrace the</h1>
       <h1>Crypto Revolution</h1><br>
@@ -1101,7 +1271,7 @@
 
   <!-- Lottery -->
 
-  <section class="card-section">
+  <section class="card-section" id="winner">
     <h2>Lottery</h2><br>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit aliquam. Dicta, ratione vitae sunt, iste
       magni obcaecati praesentium rerum quis reiciendis maxime ad nesciunt perspiciatis ea libero. Tempore,
@@ -1204,7 +1374,7 @@
   <br>
 
   <!-- footer card -->
-  <section class="footer-section">
+  <section class="footer-section" id="eco">
     <div class="footer-cards">
       <div class="lucky-card">
         <img src="block/footer-1.png" alt=""><br>
@@ -1239,7 +1409,7 @@
 
   <!-- vibrent community -->
 
-  <section class="container">
+  <section class="container" id="about">
     <div class="m-coin">
       <img src="block/king coin.png" alt="">
     </div>
@@ -1293,7 +1463,7 @@
         <p>Rewards</p><br>
       </div>
 
-      <div class="footer-3">
+      <div class="footer-3" id="contact">
         <h5>Sign up</h5>
         <form>
           <input type="text" placeholder="Your Name" pattern="[A-Za-z]{6,}" required /><br><br>
@@ -1309,16 +1479,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
